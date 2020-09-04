@@ -3,6 +3,8 @@ package com.chibufirst.gadsleaderboard.adapter
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import android.view.animation.Animation
+import android.view.animation.ScaleAnimation
 import android.widget.ImageView
 import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
@@ -14,9 +16,12 @@ class LeaderRecyclerAdapter(learning: List<Learning>) :
     RecyclerView.Adapter<LeaderRecyclerAdapter.LeaderViewHolder>() {
 
     private val mLearning: List<Learning> = learning
+    private var lastPosition = -1
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): LeaderViewHolder {
-        return LeaderViewHolder(LayoutInflater.from(parent.context).inflate(R.layout.leaders_list_item, parent, false))
+        return LeaderViewHolder(
+            LayoutInflater.from(parent.context).inflate(R.layout.leaders_list_item, parent, false)
+        )
     }
 
     override fun getItemCount(): Int {
@@ -26,6 +31,25 @@ class LeaderRecyclerAdapter(learning: List<Learning>) :
     override fun onBindViewHolder(holder: LeaderViewHolder, position: Int) {
         val learningLeaders: Learning = mLearning[position]
         holder.bind(learningLeaders)
+        setAnimation(holder.itemView, position)
+    }
+
+    private fun setAnimation(viewToAnimate: View, position: Int) {
+        if (position > lastPosition) {
+            val anim = ScaleAnimation(
+                0.0f,
+                1.0f,
+                0.0f,
+                1.0f,
+                Animation.RELATIVE_TO_SELF,
+                0.5f,
+                Animation.RELATIVE_TO_SELF,
+                0.5f
+            )
+            anim.duration = 500
+            viewToAnimate.startAnimation(anim)
+            lastPosition = position
+        }
     }
 
     class LeaderViewHolder(itemView: View) : RecyclerView.ViewHolder(itemView) {
