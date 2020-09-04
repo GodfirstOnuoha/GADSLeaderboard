@@ -1,3 +1,12 @@
 <resources>
     <string name="app_name">GADS Leaderboard</string>
+    <string name="leaderboard">Leaderboard</string>
+    <string name="submit">Submit</string>
+    <string name="learning_leaders">Learning Leaders</string>
+    <string name="skill_iq_leaders">Skill IQ Leaders</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="my_name">Chibuzo Onuoha</string>
+    <string name="learning_hours">223 learning hours, Nigeria</string>
 </resources>
