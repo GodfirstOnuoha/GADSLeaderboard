@@ -7,4 +7,10 @@
     <string name="my_name">Chibuzo Onuoha</string>
     <string name="learning_hours">223 learning hours, Nigeria</string>
     <string name="no_connection">No connection.</string>
+    <string name="project_submission">Project Submission</string>
+    <string name="first_name">First Name</string>
+    <string name="last_name">Last Name</string>
+    <string name="email_address">Email Address</string>
+    <string name="project_on_github_link">Project on GITHUB (link)</string>
+    <string name="error_text">Field required.</string>
 </resources>

@@ -12,8 +12,15 @@
         android:roundIcon="@mipmap/ic_gads_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".MainActivity" />
-        <activity android:name=".SplashScreenActivity">
+        <activity
+            android:name=".ProjectSubmissionActivity"
+            android:screenOrientation="locked" />
+        <activity
+            android:name=".MainActivity"
+            android:screenOrientation="locked" />
+        <activity
+            android:name=".SplashScreenActivity"
+            android:screenOrientation="locked">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
