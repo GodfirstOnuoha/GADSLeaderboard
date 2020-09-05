@@ -68,6 +68,7 @@
             android:background="@drawable/line_gradient" />
 
         <LinearLayout
+            android:id="@+id/linear_form"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:layout_below="@id/view_line"
@@ -130,7 +131,7 @@
                 android:autofillHints="@string/project_on_github_link"
                 android:background="@drawable/edittext_background"
                 android:hint="@string/project_on_github_link"
-                android:inputType="textPersonName|textCapWords"
+                android:inputType="textUri"
                 android:textColor="@android:color/black"
                 android:textSize="18sp"
                 android:textStyle="bold" />

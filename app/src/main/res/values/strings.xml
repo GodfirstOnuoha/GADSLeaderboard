@@ -13,4 +13,12 @@
     <string name="email_address">Email Address</string>
     <string name="project_on_github_link">Project on GITHUB (link)</string>
     <string name="error_text">Field required.</string>
+    <string name="cancel">cancel</string>
+    <string name="are_you_sure">Are you sure</string>
+    <string name="yes">Yes</string>
+    <string name="question">question</string>
+    <string name="submission_successful">Submission Successful</string>
+    <string name="submission_not_successful">Submission not Successful</string>
+    <string name="please_wait">Please wait...</string>
+    <string name="valid_email">Valid email required.</string>
 </resources>

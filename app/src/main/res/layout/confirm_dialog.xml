@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="20dp">
+
+    <ImageView
+        android:id="@+id/image_cancel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:contentDescription="@string/cancel"
+        android:src="@drawable/cancel" />
+
+    <LinearLayout
+        android:id="@+id/linear_question"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/image_cancel"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="40dp"
+        tools:ignore="UseCompoundDrawables">
+
+        <TextView
+            android:id="@+id/text_question"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dimen_size_8"
+            android:text="@string/are_you_sure"
+            android:textSize="24sp"
+            android:textStyle="bold" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:contentDescription="@string/question"
+            android:src="@drawable/question_mark" />
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/text_yes"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/linear_question"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="40dp"
+        android:layout_marginBottom="30dp"
+        android:background="@drawable/border_buttton"
+        android:text="@string/yes"
+        android:textAlignment="center"
+        android:textColor="#e98503"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+</RelativeLayout>
